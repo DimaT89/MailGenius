@@ -1,23 +1,23 @@
 // Header
 .header {
+  padding: 40px 0;
   background: #000000;
 }
 
 // Navbar
 nav {
-  background-color: rgba(0, 119, 134, 0.651);
   overflow: hidden;
 }
 
 .navbar {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  align-items: end;
 }
 
 .logo {
+  margin-right: 66px;
+
   a {
     color: white;
   }
@@ -25,15 +25,21 @@ nav {
 
 .menu {
   display: flex;
+  width: 100%;
 
   // .menu__item
-  &__item {
-    margin-left: 25px;
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__item:nth-child(3) {
+    margin-left: auto;
   }
 
   // .menu__item-link
   &__item-link {
-    color: white;
+    //color: white;
+    //font-weight: 700;
   }
 }
 
@@ -44,6 +50,13 @@ nav {
 
 // Burger menu styles
 @media screen and (max-width: $burgerBreakpoint) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .menu__item+.menu__item {
+    margin-left: 0px;
+  }
 
   // .menu
   .menu {
