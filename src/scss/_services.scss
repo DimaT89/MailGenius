@@ -1,0 +1,31 @@
+.services-title {
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+  max-width: 365px;
+  margin-bottom: 32px;
+}
+
+.services-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 164px;
+  cursor: pointer;
+  background-color: rgba(15, 6, 76, 0.45);
+}
+
+.services-list-item:hover {
+  background-color: #fff;
+  transition: 0.3s all ease;
+}
